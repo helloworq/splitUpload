@@ -2,10 +2,10 @@ server:
   port: 8888
 spring:
   datasource:
-    url: jdbc:oracle:thin:@127.0.0.1/ORCL
-    username: DIST
-    password: 12345678
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:mysql://10.200.0.251/dmatch?useSSL=false&nullNamePatternMatchesAll=true&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database: oracle
     show-sql: true

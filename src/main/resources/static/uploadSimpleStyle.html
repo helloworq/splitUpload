@@ -58,7 +58,7 @@
 
         // POST表单数据
         xhrFile = new XMLHttpRequest();
-        xhrFile.open('post', 'http://10.200.40.148:8888/upload', true);
+        xhrFile.open('post', 'http://127.0.0.1:8888/upload', true);
         xhrFile.onload = function () {
             if (this.readyState === 4 && this.status === 200) {
                 // 上传一块完成后修改进度条信息，然后上传下一块
@@ -93,7 +93,7 @@
                 upload(start, fileMd5, fileObj);
             }
         }
-        xhr.open('post', 'http://10.200.40.148:8888/getSize', true);
+        xhr.open('post', 'http://127.0.0.1:8888/getSize', true);
         // 向服务器发送文件名查询大小
         xhr.send(formData);
     }

@@ -19,7 +19,7 @@ import java.util.Objects;
 @RestController
 public class GetData {
 
-    private static final String uploadPath = "C:\\Users\\lei.zhou\\Desktop\\temp\\";//上传文件的保存路径
+    private static final String uploadPath = "C:\\Users\\lei.zhou\\Desktop\\split\\";//上传文件的保存路径
     //最小化依赖，采用内存缓存临时数据，不再使用数据库持久化
     private static final Map<String, FileInfo> FileInfoCache = new HashMap<>();
 
